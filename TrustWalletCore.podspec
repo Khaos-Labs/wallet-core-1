@@ -1,12 +1,12 @@
-version = '0.13.0'
+version = '1.0.0'
 
 Pod::Spec.new do |s|
-  s.name         = 'TrustWalletCore'
+  s.name         = 'PPTrustWalletCore'
   s.version      = version
   s.summary      = 'Trust Wallet core data structures and algorithms.'
-  s.homepage     = 'https://github.com/TrustWallet/wallet-core'
+  s.homepage     = 'https://github.com/pumapayio/wallet-core'
   s.license      = 'MIT'
-  s.authors      = { 'Alejandro Isaza' => 'al@isaza.ca' }
+  s.authors      = { 'Artem Vorobev' => 'artem@pumapay.io' }
 
   s.ios.deployment_target = '11.0'
   s.osx.deployment_target = '10.12'
