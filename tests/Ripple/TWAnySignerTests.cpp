@@ -6,7 +6,7 @@
 
 #include "HexCoding.h"
 #include "proto/Ripple.pb.h"
-#include <TrustWalletCore/TWAnySigner.h>
+#include <PPTrustWalletCore/TWAnySigner.h>
 
 #include "../interface/TWTestUtilities.h"
 #include <gtest/gtest.h>

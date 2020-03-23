@@ -10,7 +10,7 @@
 #include "PrivateKey.h"
 #include "Tezos/Forging.h"
 
-#include <TrustWalletCore/TWCoinType.h>
+#include <PPTrustWalletCore/TWCoinType.h>
 
 #include <gtest/gtest.h>
 #include <string>
@@ -74,7 +74,7 @@ TEST(TezosAddress, deriveOriginatedAddress) {
     auto operationHash = "oo7VeTEPjEusPKnsHtKcGYbYa7i4RWpcEhUVo3Suugbbs6K62Ro";
     auto operationIndex = 0;
     auto expected = "KT1WrtjtAYQSrUVvSNJPTZTebiUWoopQL5hw";
-        
+
     ASSERT_EQ(Address::deriveOriginatedAddress(operationHash, operationIndex), expected);
 }
 

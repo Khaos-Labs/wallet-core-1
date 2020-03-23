@@ -4,9 +4,9 @@
 // terms governing use, modification, and redistribution, is contained in the
 // file LICENSE at the root of the source code distribution tree.
 
-#include <TrustWalletCore/TWCoinType.h>
-#include <TrustWalletCore/TWHDWallet.h>
-#include <TrustWalletCore/TWHRP.h>
+#include <PPTrustWalletCore/TWCoinType.h>
+#include <PPTrustWalletCore/TWHDWallet.h>
+#include <PPTrustWalletCore/TWHRP.h>
 #include "HexCoding.h"
 
 #include "../interface/TWTestUtilities.h"

@@ -12,14 +12,14 @@ FOUNDATION_EXPORT double TrustWalletCoreVersionNumber;
 //! Project version string for TrustWalletCore.
 FOUNDATION_EXPORT const unsigned char TrustWalletCoreVersionString[];
 
-#include <TrustWalletCore/TWBase.h>
-#include <TrustWalletCore/TWData.h>
-#include <TrustWalletCore/TWString.h>
-#include <TrustWalletCore/TWFoundationData.h>
-#include <TrustWalletCore/TWFoundationString.h>
+#include <PPTrustWalletCore/TWBase.h>
+#include <PPTrustWalletCore/TWData.h>
+#include <PPTrustWalletCore/TWString.h>
+#include <PPTrustWalletCore/TWFoundationData.h>
+#include <PPTrustWalletCore/TWFoundationString.h>
 
-#include <TrustWalletCore/TWAnySigner.h>
+#include <PPTrustWalletCore/TWAnySigner.h>
 
 <% entities.sort { |x,y| x.name <=> y.name }.select { |entity| !entity.name.end_with?("Proto") }.each do |entity| -%>
-#include <TrustWalletCore/TW<%= entity.name %>.h>
+#include <PPTrustWalletCore/TW<%= entity.name %>.h>
 <% end -%>

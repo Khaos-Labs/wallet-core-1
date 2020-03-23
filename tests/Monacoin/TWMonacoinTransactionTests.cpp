@@ -9,9 +9,9 @@
 #include "HexCoding.h"
 #include "PublicKey.h"
 #include "proto/Bitcoin.pb.h"
-#include <TrustWalletCore/TWBitcoinScript.h>
-#include <TrustWalletCore/TWBitcoinSigHashType.h>
-#include <TrustWalletCore/TWAnySigner.h>
+#include <PPTrustWalletCore/TWBitcoinScript.h>
+#include <PPTrustWalletCore/TWBitcoinSigHashType.h>
+#include <PPTrustWalletCore/TWAnySigner.h>
 
 #include <gtest/gtest.h>
 

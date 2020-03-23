@@ -4,9 +4,9 @@
 // terms governing use, modification, and redistribution, is contained in the
 // file LICENSE at the root of the source code distribution tree.
 
-#include <TrustWalletCore/TWAnyAddress.h>
-#include <TrustWalletCore/TWAnySigner.h>
-#include <TrustWalletCore/TWPrivateKey.h>
+#include <PPTrustWalletCore/TWAnyAddress.h>
+#include <PPTrustWalletCore/TWAnySigner.h>
+#include <PPTrustWalletCore/TWPrivateKey.h>
 #include "proto/FIO.pb.h"
 #include "FIO/Address.h"
 #include "Data.h"

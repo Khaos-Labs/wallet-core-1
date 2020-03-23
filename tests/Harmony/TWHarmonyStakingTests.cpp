@@ -12,7 +12,7 @@
 #include "../interface/TWTestUtilities.h"
 #include "proto/Harmony.pb.h"
 #include "uint256.h"
-#include <TrustWalletCore/TWAnySigner.h>
+#include <PPTrustWalletCore/TWAnySigner.h>
 
 #include <gtest/gtest.h>
 

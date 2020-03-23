@@ -12,10 +12,10 @@
 #include "PrivateKey.h"
 #include "PublicKey.h"
 
-#include <TrustWalletCore/TWCoinType.h>
-#include <TrustWalletCore/TWCurve.h>
-#include <TrustWalletCore/TWHDVersion.h>
-#include <TrustWalletCore/TWPurpose.h>
+#include <PPTrustWalletCore/TWCoinType.h>
+#include <PPTrustWalletCore/TWCurve.h>
+#include <PPTrustWalletCore/TWHDVersion.h>
+#include <PPTrustWalletCore/TWPurpose.h>
 
 #include <array>
 #include <optional>
@@ -94,7 +94,7 @@ class HDWallet {
       PrivateKeyTypeDefault32 = 0, // 32-byte private key
       PrivateKeyTypeExtended96 = 1, // 3*32-byte extended private key
     };
-    
+
     // obtain privateKeyType used by the coin/curve
     static PrivateKeyType getPrivateKeyType(TWCurve curve);
 };

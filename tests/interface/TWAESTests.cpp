@@ -6,7 +6,7 @@
 
 #include "TWTestUtilities.h"
 
-#include <TrustWalletCore/TWAES.h>
+#include <PPTrustWalletCore/TWAES.h>
 
 #include <gtest/gtest.h>
 

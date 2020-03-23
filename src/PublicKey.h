@@ -9,7 +9,7 @@
 #include "Data.h"
 #include "Hash.h"
 
-#include <TrustWalletCore/TWPublicKeyType.h>
+#include <PPTrustWalletCore/TWPublicKeyType.h>
 
 #include <cassert>
 #include <stdexcept>

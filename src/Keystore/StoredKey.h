@@ -11,7 +11,7 @@
 #include "../Data.h"
 #include "../HDWallet.h"
 
-#include <TrustWalletCore/TWCoinType.h>
+#include <PPTrustWalletCore/TWCoinType.h>
 #include <nlohmann/json.hpp>
 
 #include <optional>
@@ -75,13 +75,13 @@ public:
 
     /// Returns the account for a specific coin if it exists.
     const Account* account(TWCoinType coin) const;
-    
+
     /// Add an account
     void addAccount(const std::string& address, const DerivationPath& derivationPath, const std::string& extetndedPublicKey);
 
     /// Remove the account for a specific coin
     void removeAccount(TWCoinType coin);
-    
+
     /// Returns the private key for a specific coin, creating an account if necessary.
     ///
     /// @throws std::invalid_argument if this key is of a type other than

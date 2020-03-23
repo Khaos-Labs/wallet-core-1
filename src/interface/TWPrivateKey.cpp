@@ -10,7 +10,7 @@
 #include <TrezorCrypto/ecdsa.h>
 #include <TrezorCrypto/rand.h>
 #include <TrezorCrypto/secp256k1.h>
-#include <TrustWalletCore/TWPrivateKey.h>
+#include <PPTrustWalletCore/TWPrivateKey.h>
 
 #include <exception>
 

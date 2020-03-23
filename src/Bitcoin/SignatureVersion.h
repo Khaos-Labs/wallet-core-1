@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include <TrustWalletCore/TWBitcoinSigHashType.h>
+#include <PPTrustWalletCore/TWBitcoinSigHashType.h>
 
 namespace TW::Bitcoin {
 enum SignatureVersion {

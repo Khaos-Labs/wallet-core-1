@@ -6,9 +6,9 @@
 
 #include "../Ripple/XAddress.h"
 
-#include <TrustWalletCore/TWHash.h>
-#include <TrustWalletCore/TWPublicKey.h>
-#include <TrustWalletCore/TWRippleXAddress.h>
+#include <PPTrustWalletCore/TWHash.h>
+#include <PPTrustWalletCore/TWPublicKey.h>
+#include <PPTrustWalletCore/TWRippleXAddress.h>
 
 #include <memory>
 

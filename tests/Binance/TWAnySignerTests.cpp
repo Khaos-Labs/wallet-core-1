@@ -7,7 +7,7 @@
 #include "HexCoding.h"
 #include "Binance/Address.h"
 #include "proto/Binance.pb.h"
-#include <TrustWalletCore/TWAnySigner.h>
+#include <PPTrustWalletCore/TWAnySigner.h>
 
 #include "../interface/TWTestUtilities.h"
 #include <gtest/gtest.h>

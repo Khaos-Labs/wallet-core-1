@@ -9,7 +9,7 @@
 #include "../Data.h"
 #include "../PublicKey.h"
 #include  "../SS58Address.h"
-#include  <TrustWalletCore/TWSS58AddressType.h>
+#include <PPTrustWalletCore/TWSS58AddressType.h>
 
 #include <string>
 

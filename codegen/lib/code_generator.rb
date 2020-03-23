@@ -60,7 +60,7 @@ class CodeGenerator
         unless string.nil? || string.empty?
           code << "\n" unless header.nil?
           code << string
-  
+
           path = File.expand_path(File.join(output_folder, output_subfolder, "#{file}.#{extension}"))
           File.write(path, code)
         end

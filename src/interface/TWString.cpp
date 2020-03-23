@@ -5,7 +5,7 @@
 // file LICENSE at the root of the source code distribution tree.
 
 
-#include <TrustWalletCore/TWString.h>
+#include <PPTrustWalletCore/TWString.h>
 #include <string>
 
 TWString *_Nonnull TWStringCreateWithUTF8Bytes(const char *_Nonnull bytes) {

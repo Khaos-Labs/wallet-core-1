@@ -8,7 +8,7 @@
 #include "HexCoding.h"
 #include "../interface/TWTestUtilities.h"
 
-#include <TrustWalletCore/TWBitcoinScript.h>
+#include <PPTrustWalletCore/TWBitcoinScript.h>
 
 #include <gtest/gtest.h>
 
@@ -32,7 +32,7 @@ TEST(BitcoinTransaction, Encode) {
 
     auto oscript1 = Script(parse_hex("0x76a914f2d4db28cad6502226ee484ae24505c2885cb12d88ac"));
     transaction.outputs.emplace_back(400000000, oscript1);
-   
+
     auto unsignedData = std::vector<uint8_t>();
     transaction.encode(false, unsignedData);
     ASSERT_EQ(hex(unsignedData.begin(), unsignedData.end()), ""

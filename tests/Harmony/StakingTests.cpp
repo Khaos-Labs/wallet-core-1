@@ -12,7 +12,7 @@
 #include "HexCoding.h"
 #include "proto/Harmony.pb.h"
 
-#include <TrustWalletCore/TWHRP.h>
+#include <PPTrustWalletCore/TWHRP.h>
 #include <gtest/gtest.h>
 
 namespace TW::Harmony {

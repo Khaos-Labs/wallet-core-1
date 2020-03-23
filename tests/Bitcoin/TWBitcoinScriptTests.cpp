@@ -6,8 +6,8 @@
 
 #include "../interface/TWTestUtilities.h"
 
-#include <TrustWalletCore/TWBitcoinAddress.h>
-#include <TrustWalletCore/TWBitcoinScript.h>
+#include <PPTrustWalletCore/TWBitcoinAddress.h>
+#include <PPTrustWalletCore/TWBitcoinScript.h>
 
 #include <gtest/gtest.h>
 

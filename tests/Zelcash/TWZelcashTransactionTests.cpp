@@ -12,8 +12,8 @@
 #include "PublicKey.h"
 #include "Zcash/Transaction.h"
 
-#include <TrustWalletCore/TWBitcoinScript.h>
-#include <TrustWalletCore/TWAnySigner.h>
+#include <PPTrustWalletCore/TWBitcoinScript.h>
+#include <PPTrustWalletCore/TWAnySigner.h>
 
 #include <gtest/gtest.h>
 

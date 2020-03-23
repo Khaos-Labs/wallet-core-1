@@ -5,7 +5,7 @@
 // file LICENSE at the root of the source code distribution tree.
 
 #include "../interface/TWTestUtilities.h"
-#include <TrustWalletCore/TWAnySigner.h>
+#include <PPTrustWalletCore/TWAnySigner.h>
 #include "HexCoding.h"
 #include "proto/NEO.pb.h"
 

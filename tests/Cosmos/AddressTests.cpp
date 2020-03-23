@@ -10,7 +10,7 @@
 #include "Cosmos/Address.h"
 
 #include <gtest/gtest.h>
-#include <TrustWalletCore/TWHDWallet.h>
+#include <PPTrustWalletCore/TWHDWallet.h>
 
 namespace TW::Cosmos {
 

@@ -6,7 +6,7 @@
 
 #include "HexCoding.h"
 #include "proto/NULS.pb.h"
-#include <TrustWalletCore/TWAnySigner.h>
+#include <PPTrustWalletCore/TWAnySigner.h>
 #include "uint256.h"
 
 #include "../interface/TWTestUtilities.h"

@@ -15,7 +15,7 @@
 #include <TrezorCrypto/bip32.h>
 #include <TrezorCrypto/bip39.h>
 #include <TrezorCrypto/curves.h>
-#include <TrustWalletCore/TWHRP.h>
+#include <PPTrustWalletCore/TWHRP.h>
 
 #include <array>
 
@@ -116,7 +116,7 @@ std::string HDWallet::getExtendedPrivateKey(TWPurpose purpose, TWCoinType coin, 
     if (version == TWHDVersionNone) {
         return "";
     }
-    
+
     const auto curve = TWCoinTypeCurve(coin);
     auto derivationPath = TW::DerivationPath({DerivationPathIndex(purpose, true), DerivationPathIndex(coin, true)});
     auto node = getNode(*this, curve, derivationPath);
@@ -129,7 +129,7 @@ std::string HDWallet::getExtendedPublicKey(TWPurpose purpose, TWCoinType coin, T
     if (version == TWHDVersionNone) {
         return "";
     }
-    
+
     const auto curve = TWCoinTypeCurve(coin);
     auto derivationPath = TW::DerivationPath({DerivationPathIndex(purpose, true), DerivationPathIndex(coin, true)});
     auto node = getNode(*this, curve, derivationPath);

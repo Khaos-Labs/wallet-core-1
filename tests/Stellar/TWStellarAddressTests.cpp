@@ -6,10 +6,10 @@
 
 #include "../interface/TWTestUtilities.h"
 
-#include <TrustWalletCore/TWCoinType.h>
-#include <TrustWalletCore/TWHDWallet.h>
-#include <TrustWalletCore/TWPrivateKey.h>
-#include <TrustWalletCore/TWAnyAddress.h>
+#include <PPTrustWalletCore/TWCoinType.h>
+#include <PPTrustWalletCore/TWHDWallet.h>
+#include <PPTrustWalletCore/TWPrivateKey.h>
+#include <PPTrustWalletCore/TWAnyAddress.h>
 
 #include <gtest/gtest.h>
 

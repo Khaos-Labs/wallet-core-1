@@ -9,7 +9,7 @@
 //
 
 #include "../interface/TWTestUtilities.h"
-#include <TrustWalletCore/TWCoinTypeConfiguration.h>
+#include <PPTrustWalletCore/TWCoinTypeConfiguration.h>
 #include <gtest/gtest.h>
 
 TEST(TWSolanaCoinType, TWCoinType) {

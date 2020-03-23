@@ -4,7 +4,7 @@
 // terms governing use, modification, and redistribution, is contained in the
 // file LICENSE at the root of the source code distribution tree.
 
-#include <TrustWalletCore/TWBitcoinSigHashType.h>
+#include <PPTrustWalletCore/TWBitcoinSigHashType.h>
 
 bool TWBitcoinSigHashTypeIsSingle(enum TWBitcoinSigHashType type) {
     return (type & 0x1f) == TWBitcoinSigHashTypeSingle;

@@ -9,7 +9,7 @@
 #include "proto/NEAR.pb.h"
 #include "NEAR/Signer.h"
 
-#include <TrustWalletCore/TWHRP.h>
+#include <PPTrustWalletCore/TWHRP.h>
 #include <gtest/gtest.h>
 
 namespace TW::NEAR {

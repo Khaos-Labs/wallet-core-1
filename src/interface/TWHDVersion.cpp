@@ -4,7 +4,7 @@
 // terms governing use, modification, and redistribution, is contained in the
 // file LICENSE at the root of the source code distribution tree.
 
-#include <TrustWalletCore/TWHDVersion.h>
+#include <PPTrustWalletCore/TWHDVersion.h>
 
 #pragma clang diagnostic push
 #pragma clang diagnostic fatal "-Wswitch"

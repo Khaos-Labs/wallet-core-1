@@ -9,7 +9,7 @@
 #include "../Data.h"
 
 #include "OpCodes.h"
-#include <TrustWalletCore/TWCoinType.h>
+#include <PPTrustWalletCore/TWCoinType.h>
 
 #include <string>
 #include <vector>

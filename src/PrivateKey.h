@@ -9,7 +9,7 @@
 #include "Data.h"
 #include "PublicKey.h"
 
-#include <TrustWalletCore/TWCurve.h>
+#include <PPTrustWalletCore/TWCurve.h>
 
 namespace TW {
 

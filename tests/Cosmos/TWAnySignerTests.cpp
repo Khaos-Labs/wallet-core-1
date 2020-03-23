@@ -8,7 +8,7 @@
 #include "HexCoding.h"
 #include "proto/Cosmos.pb.h"
 #include "../interface/TWTestUtilities.h"
-#include <TrustWalletCore/TWAnySigner.h>
+#include <PPTrustWalletCore/TWAnySigner.h>
 #include <gtest/gtest.h>
 
 using namespace TW;

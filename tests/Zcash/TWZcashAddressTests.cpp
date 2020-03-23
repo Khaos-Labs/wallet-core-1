@@ -8,13 +8,13 @@
 
 #include "Zcash/TAddress.h"
 
-#include <TrustWalletCore/TWBitcoinScript.h>
-#include <TrustWalletCore/TWCoinType.h>
-#include <TrustWalletCore/TWHDWallet.h>
-#include <TrustWalletCore/TWPrivateKey.h>
-#include <TrustWalletCore/TWPublicKey.h>
-#include <TrustWalletCore/TWPurpose.h>
-#include <TrustWalletCore/TWAnyAddress.h>
+#include <PPTrustWalletCore/TWBitcoinScript.h>
+#include <PPTrustWalletCore/TWCoinType.h>
+#include <PPTrustWalletCore/TWHDWallet.h>
+#include <PPTrustWalletCore/TWPrivateKey.h>
+#include <PPTrustWalletCore/TWPublicKey.h>
+#include <PPTrustWalletCore/TWPurpose.h>
+#include <PPTrustWalletCore/TWAnyAddress.h>
 
 #include <gtest/gtest.h>
 

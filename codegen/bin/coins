@@ -36,7 +36,7 @@ erbs = [
   {'template' => 'coins.cpp.erb', 'folder' => 'src/Generated', 'file' => 'Coins.cpp'},
   {'template' => 'coins.md.erb', 'folder' => 'docs', 'file' => 'coins.md'},
   {'template' => 'hrp.cpp.erb', 'folder' => 'src/Generated', 'file' => 'TWHRP.cpp'},
-  {'template' => 'hrp.h.erb', 'folder' => 'include/TrustWalletCore', 'file' => 'TWHRP.h'}
+  {'template' => 'hrp.h.erb', 'folder' => 'include/PPTrustWalletCore', 'file' => 'TWHRP.h'}
 ]
 
 FileUtils.mkdir_p File.join('src', 'Generated')

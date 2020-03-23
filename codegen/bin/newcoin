@@ -48,7 +48,7 @@ def self.generate_file(templateFile, folder, fileName, coin)
 end
 
 def self.insert_coin_type(coin)
-    target_file = "include/TrustWalletCore/TWCoinType.h"
+    target_file = "include/PPTrustWalletCore/TWCoinType.h"
     target_line = "    TWCoinType#{coin['name']} = #{coin_type(coin['derivationPath'])},\n"
     if insert_target_line(target_file, target_line, "};\n")
         insert_blockchain_type(coin)
@@ -56,7 +56,7 @@ def self.insert_coin_type(coin)
 end
 
 def insert_blockchain_type(coin)
-    target_file = "include/TrustWalletCore/TWBlockchain.h"
+    target_file = "include/PPTrustWalletCore/TWBlockchain.h"
     line_number = File.readlines(target_file).count
     target_line = "    TWBlockchain#{coin['blockchain']} = #{line_number - 17},\n"
     insert_target_line(target_file, target_line, "};\n")

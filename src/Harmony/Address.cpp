@@ -8,7 +8,7 @@
 
 #include "Address.h"
 
-#include <TrustWalletCore/TWHRP.h>
+#include <PPTrustWalletCore/TWHRP.h>
 
 using namespace TW::Harmony;
 

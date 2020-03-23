@@ -12,11 +12,11 @@
 #include "PrivateKey.h"
 #include "PublicKey.h"
 
-#include <TrustWalletCore/TWBlockchain.h>
-#include <TrustWalletCore/TWCoinType.h>
-#include <TrustWalletCore/TWCurve.h>
-#include <TrustWalletCore/TWHDVersion.h>
-#include <TrustWalletCore/TWPurpose.h>
+#include <PPTrustWalletCore/TWBlockchain.h>
+#include <PPTrustWalletCore/TWCoinType.h>
+#include <PPTrustWalletCore/TWCurve.h>
+#include <PPTrustWalletCore/TWHDVersion.h>
+#include <PPTrustWalletCore/TWPurpose.h>
 
 #include <string>
 #include <set>

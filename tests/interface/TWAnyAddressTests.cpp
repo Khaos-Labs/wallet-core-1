@@ -7,8 +7,8 @@
 #include "TWTestUtilities.h"
 
 #include "HexCoding.h"
-#include <TrustWalletCore/TWAnyAddress.h>
-#include <TrustWalletCore/TWCoinType.h>
+#include <PPTrustWalletCore/TWAnyAddress.h>
+#include <PPTrustWalletCore/TWCoinType.h>
 
 #include <gtest/gtest.h>
 

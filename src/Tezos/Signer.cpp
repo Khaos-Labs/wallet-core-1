@@ -9,7 +9,7 @@
 #include "../Hash.h"
 #include "../HexCoding.h"
 
-#include <TrustWalletCore/TWCurve.h>
+#include <PPTrustWalletCore/TWCurve.h>
 #include <google/protobuf/util/json_util.h>
 
 #include <string>

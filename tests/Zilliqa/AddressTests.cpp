@@ -9,7 +9,7 @@
 #include "Zilliqa/Address.h"
 #include "Zilliqa/AddressChecksum.h"
 
-#include <TrustWalletCore/TWHRP.h>
+#include <PPTrustWalletCore/TWHRP.h>
 
 #include <gtest/gtest.h>
 

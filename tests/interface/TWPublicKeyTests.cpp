@@ -10,9 +10,9 @@
 #include "PrivateKey.h"
 #include "HexCoding.h"
 
-#include <TrustWalletCore/TWHash.h>
-#include <TrustWalletCore/TWPrivateKey.h>
-#include <TrustWalletCore/TWPublicKey.h>
+#include <PPTrustWalletCore/TWHash.h>
+#include <PPTrustWalletCore/TWPrivateKey.h>
+#include <PPTrustWalletCore/TWPublicKey.h>
 
 #include <gtest/gtest.h>
 

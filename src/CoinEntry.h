@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include <TrustWalletCore/TWCoinType.h>
+#include <PPTrustWalletCore/TWCoinType.h>
 
 #include "Data.h"
 #include "PublicKey.h"

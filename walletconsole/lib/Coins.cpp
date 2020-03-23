@@ -10,8 +10,8 @@
 #include "WalletConsole.h"
 #include "Util.h"
 
-#include <TrustWalletCore/TWCoinTypeConfiguration.h>
-#include <TrustWalletCore/TWPublicKeyType.h>
+#include <PPTrustWalletCore/TWCoinTypeConfiguration.h>
+#include <PPTrustWalletCore/TWPublicKeyType.h>
 #include "Data.h"
 #include "Coin.h"
 

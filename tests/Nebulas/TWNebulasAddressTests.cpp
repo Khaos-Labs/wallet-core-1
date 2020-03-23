@@ -6,9 +6,9 @@
 
 #include "../interface/TWTestUtilities.h"
 
-#include <TrustWalletCore/TWAnyAddress.h>
-#include <TrustWalletCore/TWHDWallet.h>
-#include <TrustWalletCore/TWPrivateKey.h>
+#include <PPTrustWalletCore/TWAnyAddress.h>
+#include <PPTrustWalletCore/TWHDWallet.h>
+#include <PPTrustWalletCore/TWPrivateKey.h>
 
 #include <gtest/gtest.h>
 

@@ -2,11 +2,11 @@ package main
 
 // #cgo CFLAGS: -I/wallet-core/include
 // #cgo LDFLAGS: -L/wallet-core/build -L/wallet-core/build/trezor-crypto -lTrustWalletCore -lprotobuf -lTrezorCrypto -lc++ -lm
-// #include <TrustWalletCore/TWHDWallet.h>
-// #include <TrustWalletCore/TWString.h>
-// #include <TrustWalletCore/TWData.h>
-// #include <TrustWalletCore/TWPrivateKey.h>
-// #include <TrustWalletCore/TWPublicKey.h>
+// #include <PPTrustWalletCore/TWHDWallet.h>
+// #include <PPTrustWalletCore/TWString.h>
+// #include <PPTrustWalletCore/TWData.h>
+// #include <PPTrustWalletCore/TWPrivateKey.h>
+// #include <PPTrustWalletCore/TWPublicKey.h>
 import "C"
 
 import "fmt"

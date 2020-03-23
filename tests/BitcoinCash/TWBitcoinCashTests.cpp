@@ -9,15 +9,15 @@
 #include "proto/Bitcoin.pb.h"
 #include "../interface/TWTestUtilities.h"
 
-#include <TrustWalletCore/TWBitcoinSigHashType.h>
+#include <PPTrustWalletCore/TWBitcoinSigHashType.h>
 
-#include <TrustWalletCore/TWAnyAddress.h>
-#include <TrustWalletCore/TWAnySigner.h>
-#include <TrustWalletCore/TWBitcoinAddress.h>
-#include <TrustWalletCore/TWBitcoinScript.h>
-#include <TrustWalletCore/TWHDWallet.h>
-#include <TrustWalletCore/TWHash.h>
-#include <TrustWalletCore/TWPrivateKey.h>
+#include <PPTrustWalletCore/TWAnyAddress.h>
+#include <PPTrustWalletCore/TWAnySigner.h>
+#include <PPTrustWalletCore/TWBitcoinAddress.h>
+#include <PPTrustWalletCore/TWBitcoinScript.h>
+#include <PPTrustWalletCore/TWHDWallet.h>
+#include <PPTrustWalletCore/TWHash.h>
+#include <PPTrustWalletCore/TWPrivateKey.h>
 
 #include <gtest/gtest.h>
 
@@ -32,7 +32,7 @@ TEST(BitcoinCash, ValidAddress) {
     auto string = STRING("bitcoincash:qqa2qx0d8tegw32xk8u75ws055en4x3h2u0e6k46y4");
     auto address = WRAP(TWAnyAddress, TWAnyAddressCreateWithString(string.get(), TWCoinTypeBitcoinCash));
     ASSERT_NE(address.get(), nullptr);
-    
+
     auto script = WRAP(TWBitcoinScript, TWBitcoinScriptBuildForAddress(string.get(), TWCoinTypeBitcoinCash));
     ASSERT_FALSE(TWBitcoinScriptSize(script.get()) == 0);
 }

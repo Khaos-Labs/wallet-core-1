@@ -8,7 +8,7 @@
 #include "proto/Ethereum.pb.h"
 #include "uint256.h"
 #include "../interface/TWTestUtilities.h"
-#include <TrustWalletCore/TWAnySigner.h>
+#include <PPTrustWalletCore/TWAnySigner.h>
 #include <gtest/gtest.h>
 
 using namespace TW;

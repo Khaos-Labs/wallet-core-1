@@ -10,7 +10,7 @@
 #include "../Hash.h"
 #include "../HexCoding.h"
 
-#include <TrustWalletCore/TWStellarMemoType.h>
+#include <PPTrustWalletCore/TWStellarMemoType.h>
 
 using namespace TW;
 using namespace TW::Stellar;

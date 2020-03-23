@@ -6,8 +6,8 @@
 
 #pragma once
 
-#include <TrustWalletCore/TWCoinType.h>
-#include <TrustWalletCore/TWPurpose.h>
+#include <PPTrustWalletCore/TWCoinType.h>
+#include <PPTrustWalletCore/TWPurpose.h>
 
 #include <cstdint>
 #include <initializer_list>

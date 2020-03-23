@@ -6,8 +6,8 @@
 
 #pragma once
 
-#include <TrustWalletCore/TWData.h>
-#include <TrustWalletCore/TWString.h>
+#include <PPTrustWalletCore/TWData.h>
+#include <PPTrustWalletCore/TWString.h>
 #include <gtest/gtest.h>
 #include <google/protobuf/util/json_util.h>
 

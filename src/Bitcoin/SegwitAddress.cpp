@@ -9,7 +9,7 @@
 #include "../Bech32.h"
 
 #include <TrezorCrypto/ecdsa.h>
-#include <TrustWalletCore/TWHRP.h>
+#include <PPTrustWalletCore/TWHRP.h>
 
 using namespace TW::Bitcoin;
 

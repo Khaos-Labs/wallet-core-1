@@ -10,7 +10,7 @@
 #include "TransactionPlan.h"
 #include "UnspentSelector.h"
 #include "../proto/Bitcoin.pb.h"
-#include <TrustWalletCore/TWCoinType.h>
+#include <PPTrustWalletCore/TWCoinType.h>
 
 #include <algorithm>
 

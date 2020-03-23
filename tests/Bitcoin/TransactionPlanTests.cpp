@@ -10,7 +10,7 @@
 #include "Bitcoin/TransactionPlan.h"
 #include "Bitcoin/TransactionBuilder.h"
 #include "proto/Bitcoin.pb.h"
-#include <TrustWalletCore/TWCoinType.h>
+#include <PPTrustWalletCore/TWCoinType.h>
 
 #include <gtest/gtest.h>
 

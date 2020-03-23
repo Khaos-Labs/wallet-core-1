@@ -10,9 +10,9 @@
 #include "Stellar/Signer.h"
 #include "HexCoding.h"
 #include "PrivateKey.h"
-#include <TrustWalletCore/TWHDWallet.h>
-#include <TrustWalletCore/TWStellarMemoType.h>
-#include <TrustWalletCore/TWStellarPassphrase.h>
+#include <PPTrustWalletCore/TWHDWallet.h>
+#include <PPTrustWalletCore/TWStellarMemoType.h>
+#include <PPTrustWalletCore/TWStellarPassphrase.h>
 #include "BinaryCoding.h"
 
 #include <gtest/gtest.h>

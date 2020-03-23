@@ -6,17 +6,17 @@
 
 #pragma once
 
-#include <TrustWalletCore/TWBase.h>
-#include <TrustWalletCore/TWData.h>
-#include <TrustWalletCore/TWString.h>
+#include <PPTrustWalletCore/TWBase.h>
+#include <PPTrustWalletCore/TWData.h>
+#include <PPTrustWalletCore/TWString.h>
 
-#include <TrustWalletCore/TWHash.h>
-#include <TrustWalletCore/TWPrivateKey.h>
-#include <TrustWalletCore/TWPublicKey.h>
+#include <PPTrustWalletCore/TWHash.h>
+#include <PPTrustWalletCore/TWPrivateKey.h>
+#include <PPTrustWalletCore/TWPublicKey.h>
 
-#include <TrustWalletCore/TWBitcoinScript.h>
-#include <TrustWalletCore/TWSegwitAddress.h>
-#include <TrustWalletCore/TWAnySigner.h>
+#include <PPTrustWalletCore/TWBitcoinScript.h>
+#include <PPTrustWalletCore/TWSegwitAddress.h>
+#include <PPTrustWalletCore/TWAnySigner.h>
 
 #include <jni.h>
 #include "TWJNIData.h"

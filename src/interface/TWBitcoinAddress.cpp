@@ -8,8 +8,8 @@
 #include "../Bitcoin/Address.h"
 
 #include <TrezorCrypto/ecdsa.h>
-#include <TrustWalletCore/TWBitcoinAddress.h>
-#include <TrustWalletCore/TWPublicKey.h>
+#include <PPTrustWalletCore/TWBitcoinAddress.h>
+#include <PPTrustWalletCore/TWPublicKey.h>
 
 #include <cstring>
 

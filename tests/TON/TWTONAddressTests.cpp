@@ -4,12 +4,12 @@
 // terms governing use, modification, and redistribution, is contained in the
 // file LICENSE at the root of the source code distribution tree.
 
-#include <TrustWalletCore/TWAnyAddress.h>
-#include <TrustWalletCore/TWAnySigner.h>
-#include <TrustWalletCore/TWString.h>
-#include <TrustWalletCore/TWPublicKey.h>
-#include <TrustWalletCore/TWData.h>
-#include <TrustWalletCore/TWHDWallet.h>
+#include <PPTrustWalletCore/TWAnyAddress.h>
+#include <PPTrustWalletCore/TWAnySigner.h>
+#include <PPTrustWalletCore/TWString.h>
+#include <PPTrustWalletCore/TWPublicKey.h>
+#include <PPTrustWalletCore/TWData.h>
+#include <PPTrustWalletCore/TWHDWallet.h>
 
 #include "../interface/TWTestUtilities.h"
 

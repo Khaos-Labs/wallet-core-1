@@ -7,7 +7,7 @@
 #include "FIO/Address.h"
 #include "HexCoding.h"
 #include "PrivateKey.h"
-#include <TrustWalletCore/TWPublicKeyType.h>
+#include <PPTrustWalletCore/TWPublicKeyType.h>
 
 #include <gtest/gtest.h>
 

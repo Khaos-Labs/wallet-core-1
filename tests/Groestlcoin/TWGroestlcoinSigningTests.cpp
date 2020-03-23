@@ -12,11 +12,11 @@
 #include "proto/Bitcoin.pb.h"
 #include "../interface/TWTestUtilities.h"
 
-#include <TrustWalletCore/TWBitcoinScript.h>
-#include <TrustWalletCore/TWBitcoinSigHashType.h>
-#include <TrustWalletCore/TWAnySigner.h>
-#include <TrustWalletCore/TWHash.h>
-#include <TrustWalletCore/TWPrivateKey.h>
+#include <PPTrustWalletCore/TWBitcoinScript.h>
+#include <PPTrustWalletCore/TWBitcoinSigHashType.h>
+#include <PPTrustWalletCore/TWAnySigner.h>
+#include <PPTrustWalletCore/TWHash.h>
+#include <PPTrustWalletCore/TWPrivateKey.h>
 
 #include <gtest/gtest.h>
 

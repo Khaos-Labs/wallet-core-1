@@ -10,7 +10,7 @@
 #include "Ontology/OngTxBuilder.h"
 #include "Ontology/OntTxBuilder.h"
 
-#include <TrustWalletCore/TWAnySigner.h>
+#include <PPTrustWalletCore/TWAnySigner.h>
 
 #include <gtest/gtest.h>
 

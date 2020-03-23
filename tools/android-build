@@ -6,7 +6,7 @@ set -e
 
 pushd android
 ./gradlew assembleRelease
-cp trustwalletcore/build/outputs/aar/trustwalletcore-release.aar ../build/trustwalletcore.aar
+cp pptrustwalletcore/build/outputs/aar/pptrustwalletcore-release.aar ../build/pptrustwalletcore.aar
 popd
 
-echo "Now upload build/trustwalletcore.aar to https://github.com/TrustWallet/trust-wallet-core/releases/tag/$(git describe --long --tags | cut -f 1 -d "-")"
+echo "Now upload build/pptrustwalletcore.aar to https://github.com/pumapayio/wallet-core/releases/tag/$(git describe --long --tags | cut -f 1 -d "-")"

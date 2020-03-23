@@ -6,13 +6,13 @@
 
 #include "../interface/TWTestUtilities.h"
 
-#include <TrustWalletCore/TWAnyAddress.h>
-#include <TrustWalletCore/TWGroestlcoinAddress.h>
-#include <TrustWalletCore/TWBitcoinScript.h>
-#include <TrustWalletCore/TWHash.h>
-#include <TrustWalletCore/TWHDWallet.h>
-#include <TrustWalletCore/TWHRP.h>
-#include <TrustWalletCore/TWPrivateKey.h>
+#include <PPTrustWalletCore/TWAnyAddress.h>
+#include <PPTrustWalletCore/TWGroestlcoinAddress.h>
+#include <PPTrustWalletCore/TWBitcoinScript.h>
+#include <PPTrustWalletCore/TWHash.h>
+#include <PPTrustWalletCore/TWHDWallet.h>
+#include <PPTrustWalletCore/TWHRP.h>
+#include <PPTrustWalletCore/TWPrivateKey.h>
 
 #include <gtest/gtest.h>
 

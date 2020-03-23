@@ -6,10 +6,10 @@
 
 #include "TWTestUtilities.h"
 
-#include <TrustWalletCore/TWAccount.h>
-#include <TrustWalletCore/TWCoinType.h>
-#include <TrustWalletCore/TWPrivateKey.h>
-#include <TrustWalletCore/TWStoredKey.h>
+#include <PPTrustWalletCore/TWAccount.h>
+#include <PPTrustWalletCore/TWCoinType.h>
+#include <PPTrustWalletCore/TWPrivateKey.h>
+#include <PPTrustWalletCore/TWStoredKey.h>
 
 #include "../src/HexCoding.h"
 
@@ -71,7 +71,7 @@ TEST(TWStoredKey, importPrivateKey) {
     const auto key = TWStoredKeyImportPrivateKey(privateKey.get(), name.get(), password.get(), coin);
     const auto privateKey2 = WRAPD(TWStoredKeyDecryptPrivateKey(key, password.get()));
     EXPECT_EQ(hex(data(TWDataBytes(privateKey2.get()), TWDataSize(privateKey2.get()))), privateKeyHex);
-    
+
     const auto privateKey3 = TWStoredKeyPrivateKey(key, coin, password.get());
     const auto pkData3 = WRAPD(TWPrivateKeyData(privateKey3));
     EXPECT_EQ(hex(data(TWDataBytes(pkData3.get()), TWDataSize(pkData3.get()))), privateKeyHex);
@@ -144,7 +144,7 @@ TEST(TWStoredKey, storeAndImportJSON) {
     const auto outFileNameStr = WRAPS(TWStringCreateWithUTF8Bytes(outFileName.c_str()));
     EXPECT_TRUE(TWStoredKeyStore(key, outFileNameStr.get()));
     //EXPECT_TRUE(filesystem::exists(outFileName));  // some linker issues with filesystem
-    
+
     // read contents of file
     ifstream ifs(outFileName);
     // get length of file:
@@ -155,7 +155,7 @@ TEST(TWStoredKey, storeAndImportJSON) {
 
     Data json(length);
     size_t idx = 0;
-    // read the slow way, ifs.read gave some false warnings with codacy 
+    // read the slow way, ifs.read gave some false warnings with codacy
     while (!ifs.eof() && idx < length) { char c = ifs.get(); json[idx++] = (uint8_t)c; }
 
     const auto key2 = TWStoredKeyImportJSON(TWDataCreateWithData(&json));
@@ -195,16 +195,16 @@ TEST(TWStoredKey, removeAccountForCoin) {
     auto password = "password";
     auto key = TWStoredKeyCreate("Test KeyStore", password);
     auto wallet = TWStoredKeyWallet(key, password);
-    
+
     ASSERT_NE(TWStoredKeyAccountForCoin(key, TWCoinTypeEthereum, wallet), nullptr);
     ASSERT_NE(TWStoredKeyAccountForCoin(key, TWCoinTypeBitcoin, wallet), nullptr);
-    
+
     ASSERT_EQ(TWStoredKeyAccountCount(key), 2);
-    
+
     TWStoredKeyRemoveAccountForCoin(key, TWCoinTypeBitcoin);
-    
+
     ASSERT_EQ(TWStoredKeyAccountCount(key), 1);
-    
+
     ASSERT_NE(TWStoredKeyAccountForCoin(key, TWCoinTypeEthereum, nullptr), nullptr);
     ASSERT_EQ(TWStoredKeyAccountForCoin(key, TWCoinTypeBitcoin, nullptr), nullptr);
 }

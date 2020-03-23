@@ -10,7 +10,7 @@
 #include "Crc.h"
 
 #include <TrezorCrypto/memzero.h>
-#include <TrustWalletCore/TWStellarVersionByte.h>
+#include <PPTrustWalletCore/TWStellarVersionByte.h>
 
 #include <array>
 #include <cassert>

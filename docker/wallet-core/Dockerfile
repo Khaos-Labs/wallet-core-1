@@ -59,7 +59,7 @@ RUN cmake --version
 # Clone repo
 ENV CC=/usr/bin/clang
 ENV CXX=/usr/bin/clang++
-RUN git clone https://github.com/TrustWallet/wallet-core.git
+RUN git clone https://github.com/pumapayio/wallet-core.git
 
 # Prepare dependencies
 RUN cd /wallet-core \

@@ -4,8 +4,8 @@
 // terms governing use, modification, and redistribution, is contained in the
 // file LICENSE at the root of the source code distribution tree.
 
-#include <TrustWalletCore/TWData.h>
-#include <TrustWalletCore/TWString.h>
+#include <PPTrustWalletCore/TWData.h>
+#include <PPTrustWalletCore/TWString.h>
 
 static inline uint8_t value(uint8_t c) {
     if (c >= '0' && c <= '9')

@@ -7,7 +7,7 @@
 #include "NEAR/Address.h"
 #include "Base58.h"
 #include "PrivateKey.h"
-#include <TrustWalletCore/TWPublicKeyType.h>
+#include <PPTrustWalletCore/TWPublicKeyType.h>
 
 #include <gtest/gtest.h>
 

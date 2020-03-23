@@ -7,10 +7,10 @@
 #include "../Bitcoin/SegwitAddress.h"
 
 #include <TrezorCrypto/ecdsa.h>
-#include <TrustWalletCore/TWSegwitAddress.h>
-#include <TrustWalletCore/TWHash.h>
-#include <TrustWalletCore/TWHRP.h>
-#include <TrustWalletCore/TWPublicKey.h>
+#include <PPTrustWalletCore/TWSegwitAddress.h>
+#include <PPTrustWalletCore/TWHash.h>
+#include <PPTrustWalletCore/TWHRP.h>
+#include <PPTrustWalletCore/TWPublicKey.h>
 
 using namespace TW;
 using namespace TW::Bitcoin;

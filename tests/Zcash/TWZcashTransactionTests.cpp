@@ -17,7 +17,7 @@
 #include "Coin.h"
 #include "Zcash/Transaction.h"
 
-#include <TrustWalletCore/TWBitcoinScript.h>
+#include <PPTrustWalletCore/TWBitcoinScript.h>
 
 #include <gtest/gtest.h>
 
