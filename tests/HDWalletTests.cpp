@@ -49,7 +49,7 @@ TEST(HDWallet, privateKeyFromMptv) {
 
 TEST(HDWallet, privateKeyFromZprv) {
     const std::string zprv = "zprvAdzGEQ44z4WPLNCRpDaup2RumWxLGgR8PQ9UVsSmJigXsHVDaHK1b6qGM2u9PmxB2Gx264ctAz4yRoN3Xwf1HZmKcn6vmjqwsawF4WqQjfd";
-    auto privateKey = HDWallet::getPrivateKeyFromExtended(zprv, DerivationPath(TWPurposeBIP44, TWCoinTypeBitcoin, 0, 0, 5));
+    auto privateKey = HDWallet::getPrivateKeyFromExtended(zprv, DerivationPath(TWPurposeBIP44, TWCoinTypeBitcoin44, 0, 0, 5));
     auto publicKey = privateKey->getPublicKey(TWPublicKeyTypeSECP256k1);
     auto address = Bitcoin::SegwitAddress(publicKey, 0, "bc");
 

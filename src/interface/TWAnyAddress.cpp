@@ -84,7 +84,7 @@ TWData* _Nonnull TWAnyAddressData(struct TWAnyAddress* _Nonnull address) {
         break;
     }
 
-    case TWCoinTypeBitcoin:
+    case TWCoinTypeBitcoin44:
     case TWCoinTypeDigiByte:
     case TWCoinTypeGroestlcoin:
     case TWCoinTypeLitecoin:

@@ -53,7 +53,7 @@ func main() {
     wallet := C.TWHDWalletCreateWithMnemonic(str, emtpy)
     defer C.TWHDWalletDelete(wallet)
 
-    key := C.TWHDWalletGetKeyForCoin(wallet, C.TWCoinTypeBitcoin)
+    key := C.TWHDWalletGetKeyForCoin(wallet, C.TWCoinTypeBitcoin44)
     keyData := C.TWPrivateKeyData(key)
     keyHex := hex.EncodeToString(TWDataGoBytes(keyData))
     fmt.Println("<== bitcoin private key: ", keyHex)
@@ -64,6 +64,6 @@ func main() {
 
     fmt.Println("<== bitcoin public key is valid: ", C.TWPublicKeyIsValid(pubKeyData, C.TWPublicKeyTypeSECP256k1))
 
-    address := C.TWHDWalletGetAddressForCoin(wallet, C.TWCoinTypeBitcoin)
+    address := C.TWHDWalletGetAddressForCoin(wallet, C.TWCoinTypeBitcoin44)
     fmt.Println("<== bitcoin address: ", TWStringGoString(address))
 }

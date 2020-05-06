@@ -54,7 +54,7 @@ TEST(TransactionPlan, NonMaxAmount) {
     utxos.push_back(buildUTXO(txOutPoint, 50000));
     utxos.push_back(buildUTXO(txOutPoint, 120000));
 
-    auto sigingInput = buildSigningInput(10000, 1, utxos, false, TWCoinTypeBitcoin);
+    auto sigingInput = buildSigningInput(10000, 1, utxos, false, TWCoinTypeBitcoin44);
     auto txPlan = TransactionBuilder::plan(sigingInput);
 
     ASSERT_EQ(txPlan.amount, 10000);
@@ -72,7 +72,7 @@ TEST(TransactionPlan, MaxAmount) {
 
     ASSERT_EQ(sum(utxos), 39200);
 
-    auto sigingInput = buildSigningInput(39200, 32, utxos, true, TWCoinTypeBitcoin);
+    auto sigingInput = buildSigningInput(39200, 32, utxos, true, TWCoinTypeBitcoin44);
     auto txPlan = TransactionBuilder::plan(sigingInput);
 
     ASSERT_EQ(txPlan.availableAmount, 30000);

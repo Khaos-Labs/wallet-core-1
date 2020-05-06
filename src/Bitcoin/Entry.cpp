@@ -16,7 +16,6 @@ using namespace std;
 
 bool Entry::validateAddress(TWCoinType coin, const string& address, TW::byte p2pkh, TW::byte p2sh, const char* hrp) const {
     switch (coin) {
-        case TWCoinTypeBitcoin:
         case TWCoinTypeDigiByte:
         case TWCoinTypeLitecoin:
         case TWCoinTypeMonacoin:
@@ -30,6 +29,7 @@ bool Entry::validateAddress(TWCoinType coin, const string& address, TW::byte p2p
                 || Address::isValid(address, {{p2pkh}, {p2sh}});
 
         case TWCoinTypeDash:
+        case TWCoinTypeBitcoin44:
         case TWCoinTypeDogecoin:
         case TWCoinTypeRavencoin:
         case TWCoinTypeZcoin:
@@ -56,7 +56,6 @@ string Entry::normalizeAddress(TWCoinType coin, const string& address) const {
 
 string Entry::deriveAddress(TWCoinType coin, const PublicKey& publicKey, TW::byte p2pkh, const char* hrp) const {
     switch (coin) {
-        case TWCoinTypeBitcoin:
         case TWCoinTypeDigiByte:
         case TWCoinTypeLitecoin:
         case TWCoinTypeViacoin:
@@ -66,6 +65,7 @@ string Entry::deriveAddress(TWCoinType coin, const PublicKey& publicKey, TW::byt
             return CashAddress(publicKey).string();
 
         case TWCoinTypeDash:
+        case TWCoinTypeBitcoin44:
         case TWCoinTypeDogecoin:
         case TWCoinTypeMonacoin:
         case TWCoinTypeQtum:

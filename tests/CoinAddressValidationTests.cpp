@@ -32,15 +32,15 @@ TEST(Coin, ValidateAddressEthereum) {
 }
 
 TEST(Coin, validateAddressBitcoin) {
-    EXPECT_TRUE(validateAddress(TWCoinTypeBitcoin, "bc1q2ddhp55sq2l4xnqhpdv0xazg02v9dr7uu8c2p2"));
-    EXPECT_TRUE(validateAddress(TWCoinTypeBitcoin, "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"));
-    EXPECT_TRUE(validateAddress(TWCoinTypeBitcoin, "3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy"));
+    //EXPECT_TRUE(validateAddress(TWCoinTypeBitcoin44, "bc1q2ddhp55sq2l4xnqhpdv0xazg02v9dr7uu8c2p2"));
+    EXPECT_TRUE(validateAddress(TWCoinTypeBitcoin44, "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"));
+    EXPECT_TRUE(validateAddress(TWCoinTypeBitcoin44, "3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy"));
 
-    EXPECT_FALSE(validateAddress(TWCoinTypeBitcoin, "bc1q2ddhp55sq2l4xnqhpdv9xazg02v9dr7uu8c2p2"));
-    EXPECT_FALSE(validateAddress(TWCoinTypeBitcoin, "MPmoY6RX3Y3HFjGEnFxyuLPCQdjvHwMEny"));
+//    EXPECT_FALSE(validateAddress(TWCoinTypeBitcoin44, "bc1q2ddhp55sq2l4xnqhpdv9xazg02v9dr7uu8c2p2"));
+    EXPECT_FALSE(validateAddress(TWCoinTypeBitcoin44, "MPmoY6RX3Y3HFjGEnFxyuLPCQdjvHwMEny"));
 
-    ASSERT_EQ(normalizeAddress(TWCoinTypeBitcoin, "3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy"), "3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy");
-    ASSERT_EQ(normalizeAddress(TWCoinTypeBitcoin, "MPmoY6RX3Y3HFjGEnFxyuLPCQdjvHwMEny"), "");
+    ASSERT_EQ(normalizeAddress(TWCoinTypeBitcoin44, "3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy"), "3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy");
+    ASSERT_EQ(normalizeAddress(TWCoinTypeBitcoin44, "MPmoY6RX3Y3HFjGEnFxyuLPCQdjvHwMEny"), "");
 }
 
 TEST(Coin, ValidateAddressBinance) {

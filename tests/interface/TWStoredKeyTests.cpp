@@ -34,7 +34,7 @@ struct TWStoredKey *_Nonnull createAStoredKey(TWCoinType coin, const string& pas
 
 /// Return a StoredKey instance that can be used for further tests.  Needs to be deleted at the end.
 struct TWStoredKey *_Nonnull createDefaultStoredKey() {
-    return createAStoredKey(TWCoinTypeBitcoin, "password");
+    return createAStoredKey(TWCoinTypeBitcoin44, "password");
 }
 
 TEST(TWStoredKey, loadPBKDF2Key) {
@@ -67,7 +67,7 @@ TEST(TWStoredKey, importPrivateKey) {
     const auto privateKey = WRAPD(TWDataCreateWithHexString(TWStringCreateWithUTF8Bytes(privateKeyHex)));
     const auto name = WRAPS(TWStringCreateWithUTF8Bytes("name"));
     const auto password = WRAPS(TWStringCreateWithUTF8Bytes("password"));
-    const auto coin = TWCoinTypeBitcoin;
+    const auto coin = TWCoinTypeBitcoin44;
     const auto key = TWStoredKeyImportPrivateKey(privateKey.get(), name.get(), password.get(), coin);
     const auto privateKey2 = WRAPD(TWStoredKeyDecryptPrivateKey(key, password.get()));
     EXPECT_EQ(hex(data(TWDataBytes(privateKey2.get()), TWDataSize(privateKey2.get()))), privateKeyHex);
@@ -84,7 +84,7 @@ TEST(TWStoredKey, importHDWallet) {
     const auto mnemonic = WRAPS(TWStringCreateWithUTF8Bytes("team engine square letter hero song dizzy scrub tornado fabric divert saddle"));
     const auto name = WRAPS(TWStringCreateWithUTF8Bytes("name"));
     const auto password = WRAPS(TWStringCreateWithUTF8Bytes("password"));
-    const auto coin = TWCoinTypeBitcoin;
+    const auto coin = TWCoinTypeBitcoin44;
     const auto key = TWStoredKeyImportHDWallet(mnemonic.get(), name.get(), password.get(), coin);
     EXPECT_TRUE(TWStoredKeyIsMnemonic(key));
 
@@ -97,13 +97,14 @@ TEST(TWStoredKey, importHDWallet) {
 
 TEST(TWStoredKey, addressAddRemove) {
     const auto password = "password";
-    const auto coin = TWCoinTypeBitcoin;
+    const auto coin = TWCoinTypeBitcoin44;
     const auto key = createAStoredKey(coin, password);
 
     const auto wallet = TWStoredKeyWallet(key, WRAPS(TWStringCreateWithUTF8Bytes(password)).get());
     const auto accountCoin = TWStoredKeyAccountForCoin(key, coin, wallet);
     const auto accountAddress = WRAPS(TWAccountAddress(accountCoin));
-    EXPECT_EQ(string(TWStringUTF8Bytes(accountAddress.get())), "bc1qturc268v0f2srjh4r2zu4t6zk4gdutqd5a6zny");
+    EXPECT_EQ(string(TWStringUTF8Bytes(accountAddress.get())), "1NyRyFewhZcWMa9XCj3bBxSXPXyoSg8dKz");
+    //EXPECT_EQ(string(TWStringUTF8Bytes(accountAddress.get())), "bc1qturc268v0f2srjh4r2zu4t6zk4gdutqd5a6zny");
     TWAccountDelete(accountCoin);
 
     EXPECT_EQ(TWStoredKeyAccountCount(key), 1);
@@ -172,7 +173,7 @@ TEST(TWStoredKey, importJsonInvalid) {
 
 TEST(TWStoredKey, fixAddresses) {
     const auto password = "password";
-    const auto key = createAStoredKey(TWCoinTypeBitcoin, password);
+    const auto key = createAStoredKey(TWCoinTypeBitcoin44, password);
     EXPECT_TRUE(TWStoredKeyFixAddresses(key, WRAPS(TWStringCreateWithUTF8Bytes(password)).get()));
     TWStoredKeyDelete(key);
 }
@@ -197,16 +198,16 @@ TEST(TWStoredKey, removeAccountForCoin) {
     auto wallet = TWStoredKeyWallet(key, password);
 
     ASSERT_NE(TWStoredKeyAccountForCoin(key, TWCoinTypeEthereum, wallet), nullptr);
-    ASSERT_NE(TWStoredKeyAccountForCoin(key, TWCoinTypeBitcoin, wallet), nullptr);
+    ASSERT_NE(TWStoredKeyAccountForCoin(key, TWCoinTypeBitcoin44, wallet), nullptr);
 
     ASSERT_EQ(TWStoredKeyAccountCount(key), 2);
 
-    TWStoredKeyRemoveAccountForCoin(key, TWCoinTypeBitcoin);
+    TWStoredKeyRemoveAccountForCoin(key, TWCoinTypeBitcoin44);
 
     ASSERT_EQ(TWStoredKeyAccountCount(key), 1);
 
     ASSERT_NE(TWStoredKeyAccountForCoin(key, TWCoinTypeEthereum, nullptr), nullptr);
-    ASSERT_EQ(TWStoredKeyAccountForCoin(key, TWCoinTypeBitcoin, nullptr), nullptr);
+    ASSERT_EQ(TWStoredKeyAccountForCoin(key, TWCoinTypeBitcoin44, nullptr), nullptr);
 }
 
 TEST(TWStoredKey, getWalletPasswordInvalid) {

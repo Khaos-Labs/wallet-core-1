@@ -16,7 +16,7 @@ class Entry: public CoinEntry {
 public:
     virtual std::vector<TWCoinType> coinTypes() const {
         return {
-            TWCoinTypeBitcoin,
+            TWCoinTypeBitcoin44,
             TWCoinTypeBitcoinCash,
             TWCoinTypeDash,
             TWCoinTypeDigiByte,

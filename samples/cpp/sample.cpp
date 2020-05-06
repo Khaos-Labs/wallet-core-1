@@ -51,7 +51,7 @@ int main() {
 
     {
         // coin type: we use Ethereum
-        const TWCoinType coinType = TWCoinType::TWCoinTypeEthereum; // TWCoinTypeBitcoin, TWCoinTypeEthereum
+        const TWCoinType coinType = TWCoinType::TWCoinTypeEthereum; // TWCoinTypeBitcoin44, TWCoinTypeEthereum
         cout << "Working with coin: " <<
             TWStringUTF8Bytes(TWCoinTypeConfigurationGetName(coinType)) << " " <<
             TWStringUTF8Bytes(TWCoinTypeConfigurationGetSymbol(coinType)) << endl;
