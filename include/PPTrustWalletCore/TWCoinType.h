@@ -44,7 +44,7 @@ enum TWCoinType {
     TWCoinTypeIoTeX = 304,
     TWCoinTypeKava = 459,
     TWCoinTypeKin = 2017,
-    TWCoinTypeLitecoin = 2,
+    TWCoinTypeLitecoin44 = 2,
     TWCoinTypeMonacoin = 22,
     TWCoinTypeNebulas = 2718,
     TWCoinTypeNULS = 8964,

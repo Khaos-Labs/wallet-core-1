@@ -87,7 +87,7 @@ TWData* _Nonnull TWAnyAddressData(struct TWAnyAddress* _Nonnull address) {
     case TWCoinTypeBitcoin44:
     case TWCoinTypeDigiByte:
     case TWCoinTypeGroestlcoin:
-    case TWCoinTypeLitecoin:
+    case TWCoinTypeLitecoin44:
     case TWCoinTypeViacoin: {
         auto decoded = Bitcoin::SegwitAddress::decode(string);
         if (!decoded.second) {

@@ -37,7 +37,7 @@ TEST(HDWallet, privateKeyFromMptv) {
     auto keyHash = Hash::sha256ripemd(publicKey.bytes.data(), 33);
     witness.insert(witness.end(), keyHash.begin(), keyHash.end());
 
-    auto prefix = Data{TW::p2shPrefix(TWCoinTypeLitecoin)};
+    auto prefix = Data{TW::p2shPrefix(TWCoinTypeLitecoin44)};
     auto redeemScript = Hash::sha256ripemd(witness.data(), witness.size());
     prefix.insert(prefix.end(), redeemScript.begin(), redeemScript.end());
 

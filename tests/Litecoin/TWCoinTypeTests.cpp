@@ -14,21 +14,21 @@
 
 
 TEST(TWLitecoinCoinType, TWCoinType) {
-    auto symbol = WRAPS(TWCoinTypeConfigurationGetSymbol(TWCoinTypeLitecoin));
+    auto symbol = WRAPS(TWCoinTypeConfigurationGetSymbol(TWCoinTypeLitecoin44));
     auto txId = TWStringCreateWithUTF8Bytes("t123");
-    auto txUrl = WRAPS(TWCoinTypeConfigurationGetTransactionURL(TWCoinTypeLitecoin, txId));
+    auto txUrl = WRAPS(TWCoinTypeConfigurationGetTransactionURL(TWCoinTypeLitecoin44, txId));
     auto accId = TWStringCreateWithUTF8Bytes("a12");
-    auto accUrl = WRAPS(TWCoinTypeConfigurationGetAccountURL(TWCoinTypeLitecoin, accId));
-    auto id = WRAPS(TWCoinTypeConfigurationGetID(TWCoinTypeLitecoin));
-    auto name = WRAPS(TWCoinTypeConfigurationGetName(TWCoinTypeLitecoin));
+    auto accUrl = WRAPS(TWCoinTypeConfigurationGetAccountURL(TWCoinTypeLitecoin44, accId));
+    auto id = WRAPS(TWCoinTypeConfigurationGetID(TWCoinTypeLitecoin44));
+    auto name = WRAPS(TWCoinTypeConfigurationGetName(TWCoinTypeLitecoin44));
 
-    ASSERT_EQ(TWCoinTypeConfigurationGetDecimals(TWCoinTypeLitecoin), 8);
-    ASSERT_EQ(TWBlockchainBitcoin, TWCoinTypeBlockchain(TWCoinTypeLitecoin));
-    ASSERT_EQ(0x32, TWCoinTypeP2shPrefix(TWCoinTypeLitecoin));
-    ASSERT_EQ(0x0, TWCoinTypeStaticPrefix(TWCoinTypeLitecoin));
+    ASSERT_EQ(TWCoinTypeConfigurationGetDecimals(TWCoinTypeLitecoin44), 8);
+    ASSERT_EQ(TWBlockchainBitcoin, TWCoinTypeBlockchain(TWCoinTypeLitecoin44));
+    ASSERT_EQ(0x32, TWCoinTypeP2shPrefix(TWCoinTypeLitecoin44));
+    ASSERT_EQ(0x0, TWCoinTypeStaticPrefix(TWCoinTypeLitecoin44));
     assertStringsEqual(symbol, "LTC");
     assertStringsEqual(txUrl, "https://blockchair.com/litecoin/transaction/t123");
     assertStringsEqual(accUrl, "https://blockchair.com/litecoin/address/a12");
-    assertStringsEqual(id, "litecoin");
-    assertStringsEqual(name, "Litecoin");
+    assertStringsEqual(id, "litecoin44");
+    assertStringsEqual(name, "Litecoin44");
 }

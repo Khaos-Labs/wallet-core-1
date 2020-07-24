@@ -146,6 +146,33 @@
         }
     },
     {
+        "id": "litecoin44",
+        "name": "Litecoin44",
+        "symbol": "LTC",
+        "decimals": 8,
+        "blockchain": "Bitcoin",
+        "derivationPath": "m/44'/2'/0'/0/0",
+        "curve": "secp256k1",
+        "publicKeyType": "secp256k1",
+        "p2pkhPrefix": 48,
+        "p2shPrefix": 50,
+        "publicKeyHasher": "sha256ripemd",
+        "base58Hasher": "sha256d",
+        "xpub": "xpub",
+        "xprv": "xprv",
+        "explorer": {
+            "url": "https://blockchair.com",
+            "txPath": "/litecoin/transaction/",
+            "accountPath": "/litecoin/address/"
+        },
+        "info": {
+            "url": "https://litecoin.org",
+            "client": "https://github.com/trezor/blockbook",
+            "clientPublic": "",
+            "clientDocs": "https://github.com/trezor/blockbook/blob/master/docs/api.md"
+        }
+    },
+    {
         "id": "decred",
         "name": "Decred",
         "symbol": "DCR",
@@ -317,34 +344,6 @@
             "client": "https://github.com/icon-project/icon-rpc-server",
             "clientPublic": "http://ctz.icxstation.com:9000/api/v3",
             "clientDocs": "https://www.icondev.io/docs/icon-json-rpc-v3"
-        }
-    },
-    {
-        "id": "litecoin",
-        "name": "Litecoin",
-        "symbol": "LTC",
-        "decimals": 8,
-        "blockchain": "Bitcoin",
-        "derivationPath": "m/84'/2'/0'/0/0",
-        "curve": "secp256k1",
-        "publicKeyType": "secp256k1",
-        "p2pkhPrefix": 48,
-        "p2shPrefix": 50,
-        "hrp": "ltc",
-        "publicKeyHasher": "sha256ripemd",
-        "base58Hasher": "sha256d",
-        "xpub": "zpub",
-        "xprv": "zprv",
-        "explorer": {
-            "url": "https://blockchair.com",
-            "txPath": "/litecoin/transaction/",
-            "accountPath": "/litecoin/address/"
-        },
-        "info": {
-            "url": "https://litecoin.org",
-            "client": "https://github.com/trezor/blockbook",
-            "clientPublic": "",
-            "clientDocs": "https://github.com/trezor/blockbook/blob/master/docs/api.md"
         }
     },
     {

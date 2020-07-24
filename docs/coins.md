@@ -5,7 +5,7 @@ This list is generated from [./coins.json](../coins.json)
 | Index   | Name             | Symbol | Logo                                                                                                                        | URL                           |
 | ------- | ---------------- | ------ | --------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
 | 0       | Bitcoin44        | BTC    | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/bitcoin44/info/logo.png" width="32" />    | <https://btc.org>             |
-| 2       | Litecoin         | LTC    | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/litecoin/info/logo.png" width="32" />     | <https://litecoin.org>        |
+| 2       | Litecoin44       | LTC    | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/litecoin44/info/logo.png" width="32" />   | <https://litecoin.org>        |
 | 3       | Dogecoin         | DOGE   | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/doge/info/logo.png" width="32" />         | <https://dogecoin.com>        |
 | 5       | Dash             | DASH   | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/dash/info/logo.png" width="32" />         | <https://dash.org>            |
 | 14      | Viacoin          | VIA    | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/viacoin/info/logo.png" width="32" />      | <https://viacoin.org>         |
